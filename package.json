@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@latticexyz/world": "^2.2.14",
-    "mud": "^1.41.2"
+    "@latticexyz/cli": "^2.2.14",
+    "@latticexyz/world": "^2.2.14"
   }
 }

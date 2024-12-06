@@ -10,10 +10,4 @@ export default defineWorld({
       key: [],
     },
   },
-  systems: {
-    IncrementSystem: {
-      name: "increment",
-      openAccess: true,
-    },
-  },
 });

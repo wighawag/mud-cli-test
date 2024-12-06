@@ -1,2 +1,9 @@
 node_modules
 src/codegen
+out
+cache
+.mud
+deploys/31337
+
+# for now:
+worlds.json

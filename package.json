@@ -1,21 +1,21 @@
 {
   "name": "test-cli",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "version": "0.0.0",
   "devDependencies": {
-    "@latticexyz/cli": "^2.2.14",
-    "@latticexyz/schema-type": "^2.2.14",
-    "@latticexyz/store": "^2.2.14",
-    "@latticexyz/world": "^2.2.14"
+    "@latticexyz/cli": "2.2.14",
+    "@latticexyz/explorer": "2.2.14",
+    "@latticexyz/schema-type": "2.2.14",
+    "@latticexyz/store": "2.2.14",
+    "@latticexyz/store-indexer": "2.2.14",
+    "@latticexyz/world": "2.2.14",
+    "zellij-launcher": "^0.0.1"
   },
   "volta": {
     "node": "18.20.5"
+  },
+  "scripts": {
+    "dev": "mud dev-contracts --rpc http://127.0.0.1:8545",
+    "local_node": "anvil --base-fee 0 --block-time 2",
+    "start": "zellij-launcher --layout zellij.kdl a $npm_package_name || zellij --layout zellij.kdl -s $npm_package_name"
   }
 }

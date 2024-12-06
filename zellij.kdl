@@ -1,0 +1,20 @@
+layout {
+	pane {
+		pane {}
+		pane split_direction="vertical" {
+			pane name="NODE" command="bash"  {
+				args "-c" "pnpm local_node; ${SHELL-bash}"
+			}
+			pane name="DEPLOY" command="bash"  {
+				args "-c" "pnpm dev; ${SHELL-bash}"
+			}
+		}
+		pane split_direction="vertical" {
+			pane name="EXPLORER" command="bash"  {
+				args "-c" "pnpm explorer; ${SHELL-bash}"
+			}
+		}
+		
+	}
+
+}
